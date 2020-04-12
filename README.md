@@ -38,6 +38,7 @@ Scripts applicable on most distributions:
 `install/node` (sudo) - Install NodeJS using n  
 `install/postman` (sudo) - Install Postman *(requires tar)*  
 `install/telegram` (sudo) - Install Telegram *(requires tar, xz-utils)*  
+`install/vscode` (sudo) - Install Visual Studio Code *(requires tar)*  
 
 ### Ubuntu
 

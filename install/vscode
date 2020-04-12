@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+wget "https://update.code.visualstudio.com/latest/linux-x64/stable" -O /tmp/vscode.tar.gz
+tar -xf /tmp/vscode.tar.gz -C /opt/
+ln -fs /opt/VSCode-linux-x64/code /usr/local/bin/code
+rm /tmp/vscode.tar.gz
+echo 'You can now type code to start Visual Studio Code'

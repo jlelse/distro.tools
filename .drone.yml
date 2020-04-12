@@ -115,3 +115,18 @@ steps:
   image: ubuntu:18.04
   commands:
   - /bin/bash -c "apt update && apt install -y wget tar xz-utils && install/telegram && command -v telegram-desktop"
+
+---
+
+kind: pipeline
+name: vscode
+
+platform:
+  os: linux
+  arch: amd64
+
+steps:
+- name: vscode
+  image: ubuntu:18.04
+  commands:
+  - /bin/bash -c "apt update && apt install -y wget tar && install/vscode && command -v code"

@@ -14,12 +14,6 @@ when the script doesn't need sudo, or
 
 when the script needs sudo privileges.
 
-## How to contribute
-
-To request a new script, just create an [issue](https://github.com/jlelse/distro.tools/issues).
-
-To add a script, just clone this [repository](https://github.com/jlelse/distro.tools) and create a pull request. If I ([jlelse](https://github.com/jlelse)) like it, I will accept it.
-
 ## Overview of scripts
 
 These scripts are made to work with amd64 and aren't guaranteed to work with other architectures.

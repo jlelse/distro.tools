@@ -7,7 +7,7 @@ platform:
 
 steps:
 - name: docker-compose
-  image: ubuntu:18.04
+  image: ubuntu:20.04
   commands:
   - /bin/bash -c "apt update && apt install -y wget && install/docker-compose && docker-compose version"
 
@@ -22,7 +22,7 @@ platform:
 
 steps:
 - name: golang
-  image: ubuntu:18.04
+  image: ubuntu:20.04
   commands:
   - /bin/bash -c "apt update && apt install -y wget tar && install/golang && source /etc/profile.d/golang.sh && go version"
 
@@ -37,7 +37,7 @@ platform:
 
 steps:
 - name: gradle
-  image: ubuntu:18.04
+  image: ubuntu:20.04
   commands:
   - /bin/bash -c "apt update && apt install -y wget jq unzip default-jdk && install/gradle && source /etc/profile.d/gradle.sh && gradle --version"
 
@@ -52,7 +52,7 @@ platform:
 
 steps:
 - name: hugo
-  image: ubuntu:18.04
+  image: ubuntu:20.04
   commands:
   - /bin/bash -c "apt update && apt install -y wget tar && install/hugo && hugo version"
 
@@ -67,7 +67,7 @@ platform:
 
 steps:
 - name: lazygit
-  image: ubuntu:18.04
+  image: ubuntu:20.04
   commands:
   - /bin/bash -c "apt update && apt install -y wget tar && install/lazygit && lazygit -v"
 
@@ -82,7 +82,7 @@ platform:
 
 steps:
 - name: node
-  image: ubuntu:18.04
+  image: ubuntu:20.04
   commands:
   - /bin/bash -c "apt update && apt install -y wget && install/node && node -v"
 
@@ -97,7 +97,7 @@ platform:
 
 steps:
 - name: postman
-  image: ubuntu:18.04
+  image: ubuntu:20.04
   commands:
   - /bin/bash -c "apt update && apt install -y wget tar && install/postman && command -v postman"
 
@@ -112,7 +112,7 @@ platform:
 
 steps:
 - name: telegram
-  image: ubuntu:18.04
+  image: ubuntu:20.04
   commands:
   - /bin/bash -c "apt update && apt install -y wget tar xz-utils && install/telegram && command -v telegram-desktop"
 
@@ -127,6 +127,6 @@ platform:
 
 steps:
 - name: vscode
-  image: ubuntu:18.04
+  image: ubuntu:20.04
   commands:
   - /bin/bash -c "apt update && apt install -y wget tar && install/vscode && command -v code"
